@@ -23,9 +23,9 @@ class QueryNotify:
         of a query.
 
         Keyword Arguments:
-        self                   -- This object.
-        result                 -- Object of type QueryResult() containing
-                                  results for this query.
+        self                   --- This object.
+        result                 --- Object of type QueryResult() containing
+                                   results for this query.
 
         Return Value:
         Nothing.
@@ -43,10 +43,10 @@ class QueryNotify:
         overridden by higher level classes that will inherit from it.
 
         Keyword Arguments:
-        self                   -- This object.
-        message                -- Object that is used to give context to start
-                                  of query.
-                                  Default is None.
+        self                   --- This object.
+        message                --- Object that is used to give context to start
+                                   of query.
+                                   Default is None.
 
         Return Value:
         Nothing.
@@ -61,9 +61,9 @@ class QueryNotify:
         overridden by higher level classes that will inherit from it.
 
         Keyword Arguments:
-        self                   -- This object.
-        result                 -- Object of type QueryResult() containing
-                                  results for this query.
+        self                   --- This object.
+        result                 --- Object of type QueryResult() containing
+                                   results for this query.
 
         Return Value:
         Nothing.
@@ -81,10 +81,10 @@ class QueryNotify:
         overridden by higher level classes that will inherit from it.
 
         Keyword Arguments:
-        self                   -- This object.
-        message                -- Object that is used to give context to start
-                                  of query.
-                                  Default is None.
+        self                   --- This object.
+        message                --- Object that is used to give context to start
+                                   of query.
+                                   Default is None.
 
         Return Value:
         Nothing.
@@ -96,7 +96,7 @@ class QueryNotify:
         """Convert Object To String.
 
         Keyword Arguments:
-        self                   -- This object.
+        self                   --- This object.
 
         Return Value:
         Nicely formatted string to get information about this object.
@@ -116,11 +116,11 @@ class QueryNotifyPrint(QueryNotify):
         of a query.
 
         Keyword Arguments:
-        self                   -- This object.
-        result                 -- Object of type QueryResult() containing
-                                  results for this query.
-        verbose                -- Boolean indicating whether to give verbose output.
-        print_all              -- Boolean indicating whether to only print all sites, including not found.
+        self                   --- This object.
+        result                 --- Object of type QueryResult() containing
+                                   results for this query.
+        verbose                --- Boolean indicating whether to give verbose output.
+        print_all              --- Boolean indicating whether to only print all sites, including not found.
 
         Return Value:
         Nothing.
@@ -146,7 +146,7 @@ class QueryNotifyPrint(QueryNotify):
         Nothing.
         """
 
-        title = "Checking username"
+        title = "Checking Username"
 
         print(Style.BRIGHT + Fore.GREEN + "[" +
               Fore.YELLOW + "*" +
@@ -164,8 +164,8 @@ class QueryNotifyPrint(QueryNotify):
         Will print the last line to the standard output.
 
         Keyword Arguments:
-        self                   -- This object.
-        message                -- The last phrase.
+        self                   --- This object.
+        message                --- The last phrase.
 
         Return Value:
         Nothing.
@@ -189,7 +189,7 @@ class QueryNotifyPrint(QueryNotify):
         the number of results is increasing.
 
         Keyword Arguments:
-        self                   -- This object.
+        self                   --- This object.
 
         Return Value:
         The number of results by the time we call the function.
@@ -204,9 +204,9 @@ class QueryNotifyPrint(QueryNotify):
         Will print the query result to the standard output.
 
         Keyword Arguments:
-        self                   -- This object.
-        result                 -- Object of type QueryResult() containing
-                                  results for this query.
+        self                   --- This object.
+        result                 --- Object of type QueryResult() containing
+                                   results for this query.
 
         Return Value:
         Nothing.
@@ -259,7 +259,7 @@ class QueryNotifyPrint(QueryNotify):
         else:
             # It should be impossible to ever get here...
             raise ValueError(
-                f"Unknown Query Status '{result.status}' for site '{self.result.site_name}'"
+                f"Unknown Query Status '{result.status}' for Site '{self.result.site_name}'"
             )
 
         return
@@ -268,8 +268,8 @@ class QueryNotifyPrint(QueryNotify):
         """Notify Start.
         Will print the last line to the standard output.
         Keyword Arguments:
-        self                   -- This object.
-        message                -- The 2 last phrases.
+        self                   --- This object.
+        message                --- The 2 last phrases.
         Return Value:
         Nothing.
         """
